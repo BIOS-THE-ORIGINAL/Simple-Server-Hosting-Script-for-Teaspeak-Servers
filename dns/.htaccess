@@ -1,0 +1,18 @@
+####################### TS3 DNS Security - ABB START #######################
+
+## 403 Hata Döndür ##
+ErrorDocument 403 /403.html
+
+## Klasörlere Erişimi Engelle ##
+Options -Indexes 
+
+## Yönlendirmeleri Aktif Et ##
+RewriteEngine On
+
+## ABB Dosyasını Görüntülemelerine İzin Verme
+<Files "karaliste.abb">
+Order Allow,Deny
+Deny from all
+</Files>
+
+####################### TS3 DNS Security - ABB END #######################
